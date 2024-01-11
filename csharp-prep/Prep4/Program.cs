@@ -10,7 +10,7 @@ class Program
 
         do
         {
-            Console.WriteLine("Enter number:");
+            Console.Write("Enter number: ");
             input  = int.Parse(Console.ReadLine());
 
             if (input != 0)
@@ -30,7 +30,6 @@ class Program
         Console.WriteLine($"The largest number is: {maxNumber}");
 
         numbers.Sort();
-
         Console.WriteLine("Sorted List:");
         foreach (var num in numbers)
         {

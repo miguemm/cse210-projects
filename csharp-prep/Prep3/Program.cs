@@ -5,20 +5,21 @@ class Program
     static void Main(string[] args)
     {
 
-        Random random = new Random();
-        int magicNumber = random.Next(1,100);
-        int guess;
-        int count = 0;
         bool play = true;
 
         while (play)
         {
+            Random random = new Random();
+            int magicNumber = random.Next(1,100);
+            int guess;
+            int count = 0;
+            
             Console.WriteLine("Welcome to Try to guess");
             
             do
             {
                 count++;
-                Console.WriteLine("What is your guess?");
+                Console.Write("What is your guess?: ");
                 guess = int.Parse(Console.ReadLine());
 
                 if (guess > magicNumber)
